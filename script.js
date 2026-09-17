@@ -21,9 +21,19 @@ letter.addEventListener('click', event => {
   if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) letter.close();
 });
 document.querySelector('#go-together').addEventListener('click', () => {
+  const audio = document.querySelector('#together-audio');
+  const status = document.querySelector('#audio-status');
+  document.querySelector('#soundtrack').hidden = false;
+  status.textContent = '';
+  audio.play().catch(() => {
+    status.textContent = 'Não foi possível iniciar o áudio. Toque em reproduzir para tentar novamente.';
+  });
   letter.close();
   document.querySelector('#surprise').focus({ preventScroll: true });
   document.querySelector('#juntas').scrollIntoView();
+});
+document.querySelector('#together-audio').addEventListener('playing', () => {
+  document.querySelector('#audio-status').textContent = '';
 });
 document.querySelector('#surprise').addEventListener('click', () => {
   document.querySelector('#final-message').hidden = false;
