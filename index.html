@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#76233c">
+  <meta name="description" content="Duas pessoas especiais. Um dia inteiro para celebrar vocês.">
+  <title>Um dia, duas estrelas ✨</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E🎂%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><a href="#inicio" aria-label="Voltar ao início">para vocês, com amor <span>♡</span></a><span>EDIÇÃO DE ANIVERSÁRIO</span></header>
+    <section class="intro" id="inicio">
+      <p class="eyebrow">HOJE O DIA É TODO DE VOCÊS</p>
+      <h1>Um dia.<br><em>Duas estrelas.</em></h1>
+      <p class="lead">A vida caprichou e trouxe vocês em dose dupla.<br>Este pedacinho da internet é só de vocês.</p>
+      <div class="choices" aria-label="Escolha a sua mensagem">
+        <button class="sister rose" data-sister="0"><span class="card-top">UMA CARTINHA PARA <span aria-hidden="true">✳</span></span><span class="name" id="name-0">Andreia</span><span class="card-bottom">Abrir meu presente <span aria-hidden="true">↗</span></span></button>
+        <button class="sister yellow" data-sister="1"><span class="card-top">UMA CARTINHA PARA <span aria-hidden="true">✷</span></span><span class="name" id="name-1">Andreza</span><span class="card-bottom">Abrir meu presente <span aria-hidden="true">↗</span></span></button>
+      </div>
+      <p class="little">Mesmo aniversário. Cada uma, um universo inteiro.</p>
+    </section>
+    <section class="together" id="juntas" aria-labelledby="together-title">
+      <p class="eyebrow">E PARA AS DUAS…</p>
+      <h2 id="together-title">A melhor parte é<br>ter vocês na minha vida.</h2>
+      <p id="joint-message">Que nunca faltem motivos para rir, coragem para sonhar e um abraço para voltar. Que esse novo ano traga coisas lindas para cada uma de vocês — e muitas histórias boas para a gente viver junto.</p>
+      <button class="surprise" id="surprise">Tem mais uma coisinha… <span aria-hidden="true">♡</span></button>
+      <div id="final-message" hidden aria-live="polite"><p class="celebration">Feliz aniversário! 🎂</p><p>Amo vocês. Hoje e em todos os outros dias.</p><span>Com carinho, seu irmão ♡</span></div>
+    </section>
+    <footer>Feito com amor, especialmente para vocês. ♡</footer>
+  </main>
+  <dialog id="letter" aria-labelledby="letter-title"><button class="close" id="close-letter" aria-label="Fechar mensagem">×</button><p class="eyebrow">ESSA É SÓ SUA ♡</p><h2 id="letter-title"></h2><p id="letter-text"></p><p class="signature">Com amor, seu irmão.</p><button class="surprise" id="go-together">Agora, uma mensagem para as duas ↗</button></dialog>
+  <div id="confetti" aria-hidden="true"></div>
+</body>
+</html>
